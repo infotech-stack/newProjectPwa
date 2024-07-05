@@ -33,7 +33,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-lbO9Bo4IHzGoK7C11iNLnTQxBMgIpc4WO303hWZKOWE=",
+      "hash": "sha256-5yRstbezz\/NTO0FsT9vF0MGFbkF4mrnJfOH6AWclIw8=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-IB6JhMidcmq6d+vy1VE1lSs7pojcEdkLRYFlvAix+QQ=",
+      "hash": "sha256-RpxumxMjpygXpglAIHr29gnBiYCR3WAepBxYueu075k=",
       "url": "_framework\/newProjectPwa.wasm"
     },
     {
@@ -213,5 +213,5 @@
       "url": "update-notification.js"
     }
   ],
-  "version": "fGUKbxyz"
+  "version": "VLriGqoH"
 };
