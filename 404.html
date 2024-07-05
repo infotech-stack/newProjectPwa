@@ -52,7 +52,19 @@
     <!-- End Single Page Apps for GitHub Pages -->
     <script src="_framework/blazor.webassembly.js"></script>
     <script>navigator.serviceWorker.register('service-worker.js');</script>
-    <script src="update-notification.js" defer></script>
+    <script src="sw-registrator.js"></script>
+    <script>
+        document.addEventListener('touchstart', function (event) {
+            if (event.touches.length > 1) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+
+        //document.onselectstart = function () {
+        //    return false;
+        //}
+
+    </script>
 </body>
 
 </html>

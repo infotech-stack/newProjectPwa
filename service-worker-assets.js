@@ -33,7 +33,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-MH9wptkTdlKec3yQu5XwfphJMk3TChuvxMJGMUKVAh0=",
+      "hash": "sha256-c3sNnhyfwK3Xr\/EdCt9Zos8WKbLADZTiEAXXFcmAlzg=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-msLqrlvwu33QZyWJXvuBW+kKfXkgzA\/vyqAQUoIv9Ws=",
+      "hash": "sha256-w7LRp4vDnEvDy9jim9O1XrCuYlh9lEVMtBEc6WJugR4=",
       "url": "_framework\/newProjectPwa.wasm"
     },
     {
@@ -197,7 +197,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-z28ktpvzQ+S/UHEa3wCSNVUyNzXpWiMtxIB9Zry3hl4=",
+      "hash": "sha256-ysPZvKM5iShU+GTDpVITXoWDYSE2Cnh1QsEJal0WOj0=",
       "url": "index.html"
     },
     {
@@ -209,9 +209,9 @@
       "url": "sample-data\/weather.json"
     },
     {
-      "hash": "sha256-sfveLoE+kHXTgsg5pA5BfBGyVEirs7QQRqoFl3MyvKk=",
-      "url": "update-notification.js"
+      "hash": "sha256-TlIlz4VgqLsfeN91SVSI7R+tjs9k2PMQBcRKBDngvOg=",
+      "url": "sw-registrator.js"
     }
   ],
-  "version": "vvRzMO4h"
+  "version": "TXhsjH+u"
 };
