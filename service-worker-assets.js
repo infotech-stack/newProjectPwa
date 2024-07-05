@@ -33,7 +33,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-UxBogf3WK0KC0DYTADY8cQnaukHb1t9YYpVbyrL9u2A=",
+      "hash": "sha256-iM5lbnRPC+UoXUoN4U5ecddBb2FNAcp2A1NytUT538c=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-DmBvjozIXYmbgzH8W\/HHPQCwHjSL9mCeRKlMISWhFiM=",
+      "hash": "sha256-oLe4YtNQYWJiYMuG+9XWQECIKzETs+C6e2OQnuGJ0M8=",
       "url": "_framework\/newProjectPwa.wasm"
     },
     {
@@ -197,7 +197,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-KE9pmHU/jjrqEGzWcfEu/dAGqBFXppqFOQBebaM6cmk=",
+      "hash": "sha256-iFb3FBL+aDSWohuyr/FXtfX95fPeVxzFiBXkp/QFd8A=",
       "url": "index.html"
     },
     {
@@ -213,5 +213,5 @@
       "url": "sw-registrator.js"
     }
   ],
-  "version": "hsYn125m"
+  "version": "efpz4mcW"
 };
