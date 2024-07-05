@@ -33,7 +33,7 @@
       "url": "_framework\/icudt_no_CJK.dat"
     },
     {
-      "hash": "sha256-br5Voq+tV4naaw\/vcRMXQIZw7TirOfqecyjWbJmIevk=",
+      "hash": "sha256-MH9wptkTdlKec3yQu5XwfphJMk3TChuvxMJGMUKVAh0=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -93,7 +93,7 @@
       "url": "_framework\/Microsoft.JSInterop.WebAssembly.wasm"
     },
     {
-      "hash": "sha256-flIwBf2uZzTk73\/RVHTPQo9j8CaY747DbykeGl7EA7Q=",
+      "hash": "sha256-msLqrlvwu33QZyWJXvuBW+kKfXkgzA\/vyqAQUoIv9Ws=",
       "url": "_framework\/newProjectPwa.wasm"
     },
     {
@@ -197,7 +197,7 @@
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-62o\/sCxtDGBTJQCIY4Nc9rqkLOxctR+pQjnYZsokL3g=",
+      "hash": "sha256-z28ktpvzQ+S/UHEa3wCSNVUyNzXpWiMtxIB9Zry3hl4=",
       "url": "index.html"
     },
     {
@@ -213,5 +213,5 @@
       "url": "update-notification.js"
     }
   ],
-  "version": "iDht+Kgh"
+  "version": "vvRzMO4h"
 };
