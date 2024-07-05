@@ -1,45 +1,31 @@
-const CACHE_NAME = 'SyntodMed Version 3.0.0'; // Update this cache name with the new version
-const urlsToCache = [
-    // Add your files here
-    '/',
-    'index.html',
-    'css/app.css',
-    'js/app.js',
-];
-
-self.addEventListener('install', event => {
-    event.waitUntil(
-        caches.open(CACHE_NAME).then(cache => {
-            return cache.addAll(urlsToCache);
-        })
-    );
-});
-
-self.addEventListener('fetch', event => {
-    event.respondWith(
-        caches.match(event.request).then(response => {
-            return response || fetch(event.request).then(fetchResponse => {
-                return caches.open(CACHE_NAME).then(cache => {
-                    cache.put(event.request, fetchResponse.clone());
-                    return fetchResponse;
-                });
-            });
-        })
-    );
-});
-
-self.addEventListener('activate', event => {
-    const cacheWhitelist = [CACHE_NAME];
-    event.waitUntil(
-        caches.keys().then(keyList => {
-            return Promise.all(
-                keyList.map(key => {
-                    if (cacheWhitelist.indexOf(key) === -1) {
-                        return caches.delete(key);
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js').then(registration => {
+        registration.onupdatefound = () => {
+            const installingWorker = registration.installing;
+            installingWorker.onstatechange = () => {
+                if (installingWorker.state === 'installed') {
+                    if (navigator.serviceWorker.controller) {
+                        // New update available
+                        console.log('New update available');
+                        showUpdateNotification();
+                    } else {
+                        // Content is cached for offline use
+                        console.log('Content is now available offline!');
                     }
-                })
-            );
-        })
-    );
-});
-/* Manifest version: efpz4mcW */
+                }
+            };
+        };
+    }).catch(error => {
+        console.log('Service Worker registration failed:', error);
+    });
+}
+
+function showUpdateNotification() {
+    const updateNotification = document.createElement('div');
+    updateNotification.innerHTML = `
+        <div style="position: fixed; bottom: 0; width: 100%; background: #444; color: #fff; text-align: center; padding: 10px;">
+            A new version is available. <button onclick="window.location.reload()">Reload</button>
+        </div>
+    `;
+    document.body.appendChild(updateNotification);
+}
