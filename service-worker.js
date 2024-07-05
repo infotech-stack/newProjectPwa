@@ -93,4 +93,4 @@ self.addEventListener('activate', event => {
         })
     );
 });
-/* Manifest version: 029DdFRj */
+/* Manifest version: evWoz2v0 */
