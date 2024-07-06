@@ -4,34 +4,60 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
+
     <title>newProjectPwa</title>
-<!--  <base href="/newProjectPwa/" />-->
-    <base href="/newProjectPwa/" />
+    <base href="/newProjectPwa/" /> <!-- Update this if your app is hosted in a subdirectory -->
+    <!-- CSS -->
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/app.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
     <link href="newProjectPwa.styles.css" rel="stylesheet" />
-    <link href="manifest.webmanifest" rel="manifest" />
+
+    <!-- Icons and Manifest -->
+    <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <link href="manifest.webmanifest" rel="manifest" />
+
+    <!-- Loading Indicators -->
+    <style>
+        .loading-progress {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .loading-progress-text {
+            position: fixed;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+
 </head>
 
 <body>
     <div id="app">
-        <svg class="loading-progress">
-            <circle r="40%" cx="50%" cy="50%" />
-            <circle r="40%" cx="50%" cy="50%" />
+        <svg class="loading-progress" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="40" stroke="#333" stroke-width="5" fill="none" />
         </svg>
-        <div class="loading-progress-text"></div>
+        <div class="loading-progress-text">Loading...</div>
     </div>
 
-    <div id="blazor-error-ui">
+    <div id="blazor-error-ui" style="display: none;">
         An unhandled error has occurred.
         <a href="" class="reload">Reload</a>
         <a class="dismiss">🗙</a>
     </div>
-    <!-- Start Single Page Apps for GitHub Pages -->
-    <script type="text/javascript">
+
+    <!-- JavaScript -->
+    <!-- Single Page Apps for GitHub Pages -->
+    <script>
         (function (l) {
             if (l.search) {
                 var q = {};
@@ -50,10 +76,20 @@
         }(window.location));
     </script>
     <!-- End Single Page Apps for GitHub Pages -->
+    <!-- WebAssembly and Blazor -->
     <script src="_framework/blazor.webassembly.js"></script>
-    <script>navigator.serviceWorker.register('./service-worker.js');</script>
+    <script>navigator.serviceWorker.register('service-worker.js');</script>
     <script src="sw-registrator.js"></script>
-    
+
+    <!-- Additional JavaScript -->
+    <script>
+        // Optional: Add custom JavaScript here as needed
+        document.addEventListener('touchstart', function (event) {
+            if (event.touches.length > 1) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+    </script>
 </body>
 
 </html>

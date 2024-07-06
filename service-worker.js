@@ -1,4 +1,4 @@
-/*// Caution! Be sure you understand the caveats before publishing an application with
+// Caution! Be sure you understand the caveats before publishing an application with
 // offline support. See https://aka.ms/blazor-offline-considerations
 
 self.importScripts('./service-worker-assets.js');
@@ -47,9 +47,9 @@ async function onFetch(event) {
     }
 
     return cachedResponse || fetch(event.request);
-}*/
+}
 
-const CACHE_NAME = 'SyntodMed Version 3.0.0'; // Update this cache name with the new version
+/*const CACHE_NAME = 'SyntodMed Version 3.0.0'; // Update this cache name with the new version
 const urlsToCache = [
     // Add your files here
     '/',
@@ -92,5 +92,5 @@ self.addEventListener('activate', event => {
             );
         })
     );
-});
-/* Manifest version: 08bO5QCe */
+});*/
+/* Manifest version: kl+WUaTC */
