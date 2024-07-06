@@ -1,7 +1,7 @@
 // Caution! Be sure you understand the caveats before publishing an application with
 // offline support. See https://aka.ms/blazor-offline-considerations
 
-self.importScripts('./service-worker-assets.js');
+/*self.importScripts('./service-worker-assets.js');
 self.addEventListener('install', event => event.waitUntil(onInstall(event)));
 self.addEventListener('activate', event => event.waitUntil(onActivate(event)));
 self.addEventListener('fetch', event => event.respondWith(onFetch(event)));
@@ -13,9 +13,7 @@ const offlineAssetsExclude = [/^service-worker\.js$/];
 
 async function onInstall(event) {
     console.info('Service worker: Install');
-    // Activate the new service worker as soon as the old one is retired.
     self.skipWaiting();
-
     // Fetch and cache all matching items from the assets manifest
     const assetsRequests = self.assetsManifest.assets
         .filter(asset => offlineAssetsInclude.some(pattern => pattern.test(asset.url)))
@@ -47,9 +45,9 @@ async function onFetch(event) {
     }
 
     return cachedResponse || fetch(event.request);
-}
+}*/
 
-/*const CACHE_NAME = 'SyntodMed Version 3.0.0'; // Update this cache name with the new version
+const CACHE_NAME = 'SyntodMed Version 3.0.0'; // Update this cache name with the new version
 const urlsToCache = [
     // Add your files here
     '/',
@@ -92,5 +90,5 @@ self.addEventListener('activate', event => {
             );
         })
     );
-});*/
-/* Manifest version: sD9C+yT9 */
+});
+/* Manifest version: XXxmTobn */
